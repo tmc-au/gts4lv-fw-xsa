@@ -18,7 +18,6 @@ jobs:
             region: "XSA"
           - model: "SM-T725"
             region: "XSA"
-          - 
 
     steps:
     - name: Checkout repo
