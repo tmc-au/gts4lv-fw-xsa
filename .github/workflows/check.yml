@@ -39,11 +39,11 @@ jobs:
        echo ::set-output name=latest_modemversion::$latest_modem
        echo ::set-output name=need_update::$need_update
 
-    - name: Use Node.js 15
+    - name: Use Node.js 16
       if: steps.check.outputs.need_update == 1
       uses: actions/setup-node@v1
       with:
-        node-version: 15
+        node-version: 16
 
     - name: Install dependencies
       if: steps.check.outputs.need_update == 1
